@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.index
+GET     /googlemapsexample1/        controllers.GoogleMapsExamples.example1
+GET     /googlemapsexample2/        controllers.GoogleMapsExamples.example2
+GET     /googlemapsexample3/        controllers.GoogleMapsExamples.example3
+GET     /googlemapsexample4/        controllers.GoogleMapsExamples.example4
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
